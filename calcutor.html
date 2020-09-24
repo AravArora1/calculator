@@ -5,6 +5,7 @@
 <body>
     <center>
 <h1><input type="text" id="textboxText" value=""></h1>
+<h1><button onclick="cleara()">CLEAR ALL</button></h1>
 <table>
 <tr>
     <td><button onclick="document.getElementById('textboxText').value=getA()*10+1">1</button></td>
@@ -101,6 +102,9 @@
                 document.getElementById("textboxText").value=result
             }
         }
+    }
+    function cleara(){
+        document.getElementById("textboxText").value=""
     }
 
 </script>
